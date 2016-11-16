@@ -50,4 +50,15 @@ $(function() {
     $(".centimeters").text(centimeters);
     $("#centimeters-solution").show();
   });
+
+  $("form#fahrenheitToCelsius").submit(function(event) {
+    event.preventDefault();
+
+    var fahrenheit = parseInt($("#fahrenheit").val());
+    var centimeters = fahrenheitToCelsius(fahrenheit);
+
+    $(".fahrenheit").text(fahrenheit);
+    $(".celsius").text(centimeters);
+    $("#celsius-solution").show();
+  });
 });
