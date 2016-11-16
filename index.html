@@ -5,7 +5,7 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.1.0.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Cooking Converter</title>
+    <title>Conversion Calculator</title>
   </head>
   <body>
     <div class="container">
@@ -20,6 +20,18 @@
       </form>
       <div id="gallons-solution">
         <p><span class="gallons"></span> gallons is equal to <span class="liters"></span> liters.</p>
+      </div>
+
+      <form id="squareFeetToSquareMeters">
+        <div class="form-group">
+          <label for="feet">Please input how many square feet you'd like to convert to square meters</label>
+          <input id="feet" type="text" class="form-control">
+        </div>
+
+      <button type="submit" class="btn">Submit</button>
+      </form>
+      <div id="meters-solution">
+        <p><span class="feet"></span> square feet is equal to <span class="meters"></span> square meters.</p>
       </div>
     </div>
   </body>

@@ -1,3 +1,7 @@
-#gallons-solution {
+#gallons-solution , #meters-solution {
   display: none;
+}
+
+form {
+  padding-top:10px;
 }

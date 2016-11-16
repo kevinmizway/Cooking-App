@@ -28,4 +28,15 @@ $(function() {
     $(".liters").text(liters);
     $("#gallons-solution").show();
   });
+
+  $("form#squareFeetToSquareMeters").submit(function(event) {
+    event.preventDefault();
+
+    var feet = parseInt($("#feet").val());
+    var meters = squareFeetToSquareMeters(feet);
+
+    $(".feet").text(feet);
+    $(".meters").text(meters);
+    $("#meters-solution").show();
+  });
 });
