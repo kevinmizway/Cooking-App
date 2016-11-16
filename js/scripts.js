@@ -39,4 +39,15 @@ $(function() {
     $(".meters").text(meters);
     $("#meters-solution").show();
   });
+
+  $("form#inchToCM").submit(function(event) {
+    event.preventDefault();
+
+    var inch = parseInt($("#inch").val());
+    var centimeters = inchToCM(inch);
+
+    $(".inch").text(inch);
+    $(".centimeters").text(centimeters);
+    $("#centimeters-solution").show();
+  });
 });
